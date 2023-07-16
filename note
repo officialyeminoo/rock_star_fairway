@@ -1,0 +1,34 @@
+to check data base 
+show dbs 
+new data 
+use "db_name";
+
+insert 
+========
+todo> db.task.insertOne({subject : 'node js', done: false})
+
+find()
+==========
+db.task.find()
+todo> db.task.find({done: false})
+
+sort 
+=======
+db.task.find().sort()
+db.task.find().sort({subject: -1})
+
+update 
+========
+db.task.find().sort({subject: -1})
+
+npm init -y
+npm i mongo 
+
+
+api
+=========
+npm init -y
+ npm i express body-parser 
+ 
+
+ curl -X POST localhost:8000/user -d/b subject = "php" -y
